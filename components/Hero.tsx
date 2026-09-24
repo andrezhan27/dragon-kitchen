@@ -14,13 +14,13 @@ export function Hero() {
   const imageY = useTransform(scrollYProgress, [0, 1], ["0%", reduceMotion ? "0%" : "9%"]);
   const imageAlt = "Exterior iluminado da Dragon Kitchen Portugal em Parque das Nações";
   const { props: { srcSet: mobileSrcSet } } = getImageProps({
-    src: "/images/hero-mobile.png",
+    src: "/images/hero-mobile.webp",
     alt: imageAlt,
     fill: true,
     sizes: "100vw",
   });
   const { props: desktopImageProps } = getImageProps({
-    src: "/images/space-1.png",
+    src: "/images/space-1.webp",
     alt: imageAlt,
     fill: true,
     sizes: "100vw",
@@ -64,7 +64,7 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.65 }}
         >
-          <Image src="/images/logo-hero.png" alt="Dragon Kitchen Portugal" width={1080} height={1080} sizes="(min-width: 768px) 130px, 92px" />
+          <Image src="/images/logo-hero.webp" alt="Dragon Kitchen Portugal" width={1080} height={1080} sizes="(min-width: 768px) 130px, 92px" />
         </motion.div>
       </div>
     </section>

@@ -107,7 +107,7 @@ export function ReviewsSection() {
       >
         <div className="reviews-photo">
           <Image
-            src="/images/review.png"
+            src="/images/review.webp"
             alt={t.reviews.imageAlt}
             fill
             sizes="(min-width: 1440px) 1248px, (min-width: 768px) calc(100vw - 64px), calc(100vw - 40px)"

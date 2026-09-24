@@ -24,12 +24,12 @@ export function Footer({ legalLinks }: { legalLinks: RestaurantLegalLinks }) {
       <div className="shell footer__main">
         <div className="footer__brand">
           <a href="/#top" aria-label="Dragon Kitchen Portugal — início">
-            <Image src="/images/logo-pt-white.png" alt="Dragon Kitchen Portugal" width={1080} height={1080} />
+            <Image src="/images/logo-pt-white.webp" alt="Dragon Kitchen Portugal" width={1080} height={1080} sizes="192px" />
           </a>
           <p>{t.footer.location}</p>
         </div>
         <address>
-          Av. Dom João II 46E<br />1990-083 Lisboa<br />Portugal
+          Av. Dom João II 46E<br />1990-083 Lisboa, Portugal
           <a href="tel:+351962699999">+351 962 699 999</a>
         </address>
         <nav aria-label="Navegação do rodapé">

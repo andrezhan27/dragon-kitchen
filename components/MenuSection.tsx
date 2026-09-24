@@ -40,7 +40,7 @@ export function MenuSection() {
         <Reveal>
           <article className="full-menu-card @container">
             <div className="full-menu-card__image">
-              <Image src="/images/menu-cta.png" alt="Pratos da Dragon Kitchen partilhados à mesa" fill sizes="(min-width: 768px) 50vw, calc(100vw - 40px)" />
+              <Image src="/images/menu-cta.webp" alt="Pratos da Dragon Kitchen partilhados à mesa" fill sizes="(min-width: 768px) 50vw, calc(100vw - 40px)" />
             </div>
             <div className="full-menu-card__content">
               <div>

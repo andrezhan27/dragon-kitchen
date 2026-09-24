@@ -12,7 +12,7 @@ export function ReservationCard() {
     <Reveal className="reservation-wrap">
       <article id="reservar" className="reservation-section section-anchor" aria-labelledby="reservation-title">
         <div className="reservation-section__visual">
-          <Image src="/images/reserve-cta.png" alt="Pratos da Dragon Kitchen preparados para uma refeição especial" fill sizes="(min-width: 768px) 46vw, calc(100vw - 40px)" className="reservation-section__image" />
+          <Image src="/images/reserve-cta.webp" alt="Pratos da Dragon Kitchen preparados para uma refeição especial" fill sizes="(min-width: 768px) 46vw, calc(100vw - 40px)" className="reservation-section__image" />
         </div>
         <div className="reservation-section__content">
           <p className="eyebrow eyebrow--gold">{t.reservation.eyebrow}</p>

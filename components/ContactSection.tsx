@@ -1,6 +1,6 @@
 "use client";
 
-import { ExternalLink } from "lucide-react";
+import { ArrowUpRight, ExternalLink } from "lucide-react";
 import { BOLT_FOOD_URL, MAPS_URL, UBER_EATS_URL } from "@/lib/constants";
 import { useLanguage } from "./LanguageProvider";
 import { Reveal } from "./Reveal";
@@ -23,7 +23,7 @@ export function ContactSection() {
               <div>
                 <dt>{t.info.addressLabel}</dt>
                 <dd className="address-row">
-                  <span>Av. Dom João II 46E<br />1990-083 Lisboa<br />Portugal</span>
+                  <span>Av. Dom João II 46E<br />1990-083 Lisboa, Portugal</span>
                   <a href={MAPS_URL} target="_blank" rel="noopener noreferrer" aria-label={t.info.directions} title={t.info.directions}>
                     <ExternalLink size={18} strokeWidth={1.5} />
                   </a>
@@ -40,8 +40,12 @@ export function ContactSection() {
               <div>
                 <dt>{t.info.delivery}</dt>
                 <dd className="delivery-links">
-                  <a href={BOLT_FOOD_URL} target="_blank" rel="noopener noreferrer">Bolt Food ↗</a>
-                  <a href={UBER_EATS_URL} target="_blank" rel="noopener noreferrer">Uber Eats ↗</a>
+                  <a href={BOLT_FOOD_URL} target="_blank" rel="noopener noreferrer">
+                    Bolt Food <ArrowUpRight size={16} strokeWidth={1.5} aria-hidden="true" />
+                  </a>
+                  <a href={UBER_EATS_URL} target="_blank" rel="noopener noreferrer">
+                    Uber Eats <ArrowUpRight size={16} strokeWidth={1.5} aria-hidden="true" />
+                  </a>
                 </dd>
               </div>
             </dl>
