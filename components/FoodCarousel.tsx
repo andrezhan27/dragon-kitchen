@@ -5,11 +5,12 @@ import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { MenuCard } from "./MenuCard";
 
 const FOOD_IMAGES = [
-  { src: "/images/food-1.webp", alt: "Seleção de pratos chineses servidos à mesa" },
-  { src: "/images/food-2.webp", alt: "Mesa com especialidades chinesas e dim sum" },
-  { src: "/images/food-3.webp", alt: "Pratos de carne e marisco preparados na Dragon Kitchen" },
-  { src: "/images/food-4.webp", alt: "Especialidades chinesas contemporâneas" },
-  { src: "/images/food-5.webp", alt: "Pratos Dragon Kitchen preparados para partilhar" },
+  { src: "/images/food-1-v2.webp", alt: "Seleção de pratos chineses servidos à mesa" },
+  { src: "/images/food-2-v2.webp", alt: "Mesa com especialidades chinesas e dim sum" },
+  { src: "/images/food-3-v2.webp", alt: "Pratos de carne e marisco preparados na Dragon Kitchen" },
+  { src: "/images/food-4-v2.webp", alt: "Especialidades chinesas contemporâneas" },
+  { src: "/images/food-5-v2.webp", alt: "Pratos Dragon Kitchen preparados para partilhar" },
+  { src: "/images/food-6-v2.webp", alt: "Mesa com dim sum e especialidades chinesas" },
 ];
 
 const LOOP_IMAGES = Array.from({ length: 3 }, (_, setIndex) =>

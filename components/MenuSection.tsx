@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
-import { MENU_PDF_URL } from "@/lib/constants";
+import { MENU_URL } from "@/lib/constants";
 import { useLanguage } from "./LanguageProvider";
 import { FoodCarousel } from "./FoodCarousel";
 import { Reveal } from "./Reveal";
@@ -22,9 +22,7 @@ export function MenuSection() {
         <Reveal className="menu-intro__copy" delay={0.1}>
           <p>{t.menu.body}</p>
           <a
-            href={MENU_PDF_URL}
-            target="_blank"
-            rel="noopener noreferrer"
+            href={MENU_URL}
             className="menu-intro__cta"
           >
             {t.menu.fullCta}<ArrowUpRight size={18} strokeWidth={1.5} />
@@ -47,7 +45,7 @@ export function MenuSection() {
                 <p className="eyebrow eyebrow--gold">{t.menu.fullEyebrow}</p>
                 <h3>{t.menu.fullTitle}</h3>
               </div>
-              <a href={MENU_PDF_URL} target="_blank" rel="noopener noreferrer" className="line-link line-link--light">
+              <a href={MENU_URL} className="line-link line-link--light">
                 {t.menu.fullCta}<ArrowUpRight size={18} strokeWidth={1.5} />
               </a>
             </div>

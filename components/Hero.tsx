@@ -20,7 +20,7 @@ export function Hero() {
     sizes: "100vw",
   });
   const { props: desktopImageProps } = getImageProps({
-    src: "/images/space-1.webp",
+    src: "/images/space-1-v2.webp",
     alt: imageAlt,
     fill: true,
     sizes: "100vw",

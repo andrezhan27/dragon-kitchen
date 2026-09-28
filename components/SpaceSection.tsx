@@ -4,9 +4,9 @@ import Image from "next/image";
 import { useLanguage } from "./LanguageProvider";
 import { Reveal } from "./Reveal";
 
-function SpaceImage({ src, alt, className, sizes }: { src: string; alt: string; className: string; sizes: string }) {
+function SpaceImage({ src, alt, sizes }: { src: string; alt: string; sizes: string }) {
   return (
-    <figure className={`space-image ${className}`}>
+    <figure className="space-image">
       <Image src={src} alt={alt} fill sizes={sizes} className="space-image__media" />
     </figure>
   );
@@ -28,22 +28,22 @@ export function SpaceSection() {
       <div className="space-gallery shell @container">
         <div className="space-gallery__grid @min-[50rem]:grid-cols-12">
           <Reveal className="space-gallery__one">
-            <SpaceImage src="/images/space-1.webp" alt="Exterior da Dragon Kitchen Portugal em Parque das Nações" className="space-image--wide" sizes="(min-width: 800px) 57vw, calc(100vw - 40px)" />
+            <SpaceImage src="/images/space-2-v2.webp" alt="Fachada iluminada da Dragon Kitchen Portugal" sizes="(min-width: 768px) 29vw, calc(50vw - 27px)" />
           </Reveal>
           <Reveal className="space-gallery__two" delay={0.06}>
-            <SpaceImage src="/images/space-2.webp" alt="Entrada iluminada da Dragon Kitchen Portugal" className="space-image--tall" sizes="(min-width: 800px) 40vw, calc(50vw - 27px)" />
+            <SpaceImage src="/images/space-3-v2.webp" alt="Dragon Kitchen Lisboa à noite" sizes="(min-width: 768px) 29vw, calc(50vw - 27px)" />
           </Reveal>
           <Reveal className="space-gallery__three" delay={0.1}>
-            <SpaceImage src="/images/space-3.webp" alt="Interior elegante da Dragon Kitchen com mesas preparadas" className="space-image--portrait" sizes="(min-width: 800px) 40vw, calc(50vw - 27px)" />
+            <SpaceImage src="/images/space-4-v2.webp" alt="Detalhe decorativo do interior da Dragon Kitchen" sizes="(min-width: 768px) 29vw, calc(50vw - 27px)" />
           </Reveal>
           <Reveal className="space-gallery__four" delay={0.06}>
-            <SpaceImage src="/images/space-4.webp" alt="Ambiente contemporâneo no interior do restaurante" className="space-image--portrait" sizes="(min-width: 800px) 30vw, calc(50vw - 27px)" />
+            <SpaceImage src="/images/space-5-v2.webp" alt="Sala da Dragon Kitchen preparada para receber" sizes="(min-width: 768px) 29vw, calc(50vw - 27px)" />
           </Reveal>
           <Reveal className="space-gallery__five" delay={0.1}>
-            <SpaceImage src="/images/space-5.webp" alt="Mesa redonda e iluminação decorativa na Dragon Kitchen" className="space-image--tall" sizes="(min-width: 800px) 30vw, calc(50vw - 27px)" />
+            <SpaceImage src="/images/space-6-v2.webp" alt="Mesa redonda no interior da Dragon Kitchen" sizes="(min-width: 768px) 29vw, calc(50vw - 27px)" />
           </Reveal>
           <Reveal className="space-gallery__six" delay={0.14}>
-            <SpaceImage src="/images/space-6.webp" alt="Detalhes do ambiente da Dragon Kitchen Portugal" className="space-image--medium" sizes="(min-width: 800px) 30vw, calc(100vw - 40px)" />
+            <SpaceImage src="/images/space-7-v2.webp" alt="Detalhe decorativo da Dragon Kitchen" sizes="(min-width: 768px) 29vw, calc(50vw - 27px)" />
           </Reveal>
         </div>
       </div>

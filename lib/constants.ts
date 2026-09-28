@@ -1,4 +1,5 @@
-export const MENU_PDF_URL = "/menu.pdf";
+export const MENU_URL = "/menu";
+export const MENU_PDF_URL = "/menu_dragon_kitchen.pdf";
 export const RESERVATION_URL = "/reservation";
 export const RESERVATION_WIDGET_URL = "https://reserve.intelis.pt/dragonkitchen";
 

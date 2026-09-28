@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     siteName: "Dragon Kitchen Portugal",
     images: [
       {
-        url: "/images/space-1.webp",
+        url: "/images/space-1-v2.webp",
         width: 1536,
         height: 1024,
         alt: "Dragon Kitchen Portugal em Parque das Nações, Lisboa",
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Dragon Kitchen Portugal",
     description: "Cozinha chinesa contemporânea em Parque das Nações, Lisboa.",
-    images: ["/images/space-1.webp"],
+    images: ["/images/space-1-v2.webp"],
   },
   alternates: { canonical: "/" },
   icons: {

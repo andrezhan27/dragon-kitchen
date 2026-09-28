@@ -38,7 +38,8 @@ export function Navbar() {
   }, [open]);
 
   const links = [
-    ["/#menu", t.nav.menu],
+    ["/#top", t.nav.home],
+    ["/menu", t.nav.menu],
     ["/#espaco", t.nav.space],
     ["/#reviews", t.nav.reviews],
     ["/#informacoes", t.nav.info],
@@ -103,7 +104,7 @@ export function Navbar() {
               transition={{ delay: reduceMotion ? 0 : index * 0.05 }}
             >{label}<span>0{index + 1}</span></motion.a>
           ))}
-          <a href={RESERVATION_URL} onClick={close}>{t.nav.reserve}<span>06</span></a>
+          <a href={RESERVATION_URL} onClick={close}>{t.nav.reserve}<span>07</span></a>
         </nav>
         <div className="mobile-menu__foot">
           <LanguageToggle />

@@ -6,7 +6,7 @@ export type Language = "pt" | "en";
 
 export const translations = {
   pt: {
-    nav: { menu: "Menu", space: "O Espaço", reviews: "Avaliações", restaurants: "Restaurantes", info: "Informações", reserve: "Reservar" },
+    nav: { home: "Início", menu: "Menu", space: "O Espaço", reviews: "Avaliações", restaurants: "Restaurantes", info: "Informações", reserve: "Reservar" },
     hero: {
       discover: "Descobrir",
       line1: "Sabores da China,",
@@ -76,7 +76,7 @@ export const translations = {
     menuClose: "Fechar menu",
   },
   en: {
-    nav: { menu: "Menu", space: "The Space", reviews: "Reviews", restaurants: "Restaurants", info: "Information", reserve: "Reserve" },
+    nav: { home: "Home", menu: "Menu", space: "The Space", reviews: "Reviews", restaurants: "Restaurants", info: "Information", reserve: "Reserve" },
     hero: {
       discover: "Discover",
       line1: "Chinese cuisine,",
