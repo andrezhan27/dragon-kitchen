@@ -962,12 +962,6 @@ button { font: inherit; }
   .full-menu-card__content { min-height: 31rem; }
   .full-menu-card .line-link { margin-bottom: 0.5rem; }
   .space-gallery__grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; align-items: start; }
-  .space-gallery__one { grid-column: 1; grid-row: 1; }
-  .space-gallery__two { grid-column: 2; grid-row: 1; }
-  .space-gallery__three { grid-column: 3; grid-row: 1; }
-  .space-gallery__four { grid-column: 1; grid-row: 2; }
-  .space-gallery__five { grid-column: 2; grid-row: 2; }
-  .space-gallery__six { grid-column: 3; grid-row: 2; }
   .space-gallery__grid .space-image { min-height: 0; }
   .reviews-intro,
   .reviews-visual { width: min(100% - 4rem, 78rem); }
@@ -1015,6 +1009,7 @@ button { font: inherit; }
   .menu-gallery-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .space-section { padding: 6.5rem 0 7rem; }
   .space-gallery { margin-top: 4rem; }
+  .space-gallery__grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
   .reviews-section { padding: 8.5rem 0 9.5rem; }
   .restaurants-section { padding: 8.5rem 0 9.5rem; }
   .restaurant-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
