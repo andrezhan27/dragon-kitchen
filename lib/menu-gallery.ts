@@ -60,8 +60,7 @@ export const MENU_GALLERY: MenuGalleryItem[] = [
   { src: menuImage("DSC06415.webp"), category: "vegetables", pt: "Batata em fio salteada", en: "Stir-fried shredded potato" },
   { src: menuImage("Dragon Kitchen Maio 2025 (5).webp"), category: "vegetables", pt: "Tofu mapo", en: "Mapo tofu" },
 
-  { src: menuImage("DSC06399.webp"), category: "rice", pt: "Arroz crocante", en: "Crispy rice" },
-  { src: menuImage("DSC06409.webp"), category: "rice", pt: "Arroz crocante", en: "Crispy rice" },
+  { src: menuImage("DSC06409.webp"), category: "rice", pt: "Arroz crocante com frango e vaca", en: "Crispy rice with chicken and beef" },
   { src: menuImage("DSC06450.webp"), category: "rice", pt: "Arroz frito com ovo", en: "Egg fried rice" },
   { src: menuImage("DSC06485.webp"), category: "rice", pt: "Massa de arroz com camarão", en: "Rice noodles with prawns" },
   { src: menuImage("DSC06556.webp"), category: "rice", pt: "Arroz frito com ananás", en: "Pineapple fried rice" },
