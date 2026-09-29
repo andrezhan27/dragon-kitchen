@@ -14,7 +14,6 @@ export const MENU_GALLERY: MenuGalleryItem[] = [
   { src: menuImage("DSC06008.webp"), category: "starters", pt: "Xiao long bao", en: "Xiao long bao" },
   { src: menuImage("DSC06013.webp"), category: "starters", pt: "Camarão panado", en: "Breaded prawns" },
   { src: menuImage("DSC06028.webp"), category: "starters", pt: "Rolinhos de primavera", en: "Spring rolls" },
-  { src: menuImage("DSC06040.webp"), category: "starters", pt: "Panada de frango", en: "Breaded chicken" },
   { src: menuImage("DSC06048.webp"), category: "starters", pt: "Ravioli de porco", en: "Pork ravioli" },
   { src: menuImage("DSC06052.webp"), category: "starters", pt: "Anéis de frango", en: "Chicken rings" },
   { src: menuImage("DSC06064.webp"), category: "starters", pt: "Nuggets de frango", en: "Chicken nuggets" },
