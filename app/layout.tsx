@@ -1,18 +1,32 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Oswald } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const display = Oswald({
-  subsets: ["latin"],
-  variable: "--font-display",
+const charter = localFont({
+  src: [
+    {
+      path: "../public/charter/webfonts/charter_regular-webfont.woff",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../public/charter/webfonts/charter_italic-webfont.woff",
+      weight: "400",
+      style: "italic",
+    },
+    {
+      path: "../public/charter/webfonts/charter_bold-webfont.woff",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "../public/charter/webfonts/charter_bold_italic-webfont.woff",
+      weight: "700",
+      style: "italic",
+    },
+  ],
+  variable: "--font-charter",
   display: "swap",
-});
-
-const serif = Cormorant_Garamond({
-  subsets: ["latin"],
-  variable: "--font-serif",
-  display: "swap",
-  weight: ["400", "500", "600"],
 });
 
 export const metadata: Metadata = {
@@ -51,15 +65,15 @@ export const metadata: Metadata = {
   },
   alternates: { canonical: "/" },
   icons: {
-    icon: [{ url: "/favicon.png?v=20260924-2", type: "image/png", sizes: "128x128" }],
-    shortcut: "/favicon.png?v=20260924-2",
-    apple: "/favicon.png?v=20260924-2",
+    icon: [{ url: "/favicon.png?v=20261003-1", type: "image/png", sizes: "128x128" }],
+    shortcut: "/favicon.png?v=20261003-1",
+    apple: "/favicon.png?v=20261003-1",
   },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="pt" className={`${display.variable} ${serif.variable}`}>
+    <html lang="pt" className={charter.variable}>
       <body>{children}</body>
     </html>
   );

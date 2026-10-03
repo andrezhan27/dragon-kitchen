@@ -17,7 +17,6 @@ export function SpaceSection() {
 
   return (
     <section id="espaco" className="space-section section-anchor" aria-labelledby="space-title">
-      <Image src="/images/bg-scales.webp" alt="" fill sizes="100vw" className="space-section__pattern" />
       <div className="shell space-intro">
         <Reveal>
           <p className="eyebrow eyebrow--green">{t.space.eyebrow}</p>

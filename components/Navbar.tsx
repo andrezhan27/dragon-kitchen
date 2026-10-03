@@ -57,7 +57,7 @@ export function Navbar() {
         className={`site-nav ${scrolled || open || pathname !== "/" ? "site-nav--solid" : ""}`}
       >
         <a href="/#top" className="site-nav__logo" aria-label="Dragon Kitchen Portugal — início">
-          <Image src="/images/logo-pt-white.webp" alt="Dragon Kitchen Portugal" width={1080} height={1080} sizes="96px" loading="eager" />
+          <Image src="/images/Logo Dragon Kitchen.png" alt="Dragon Kitchen Portugal" width={1080} height={1350} sizes="96px" loading="eager" />
         </a>
 
         <nav className="site-nav__links" aria-label="Navegação principal">

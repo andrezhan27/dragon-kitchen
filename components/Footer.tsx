@@ -24,7 +24,7 @@ export function Footer({ legalLinks }: { legalLinks: RestaurantLegalLinks }) {
       <div className="shell footer__main">
         <div className="footer__brand">
           <a href="/#top" aria-label="Dragon Kitchen Portugal — início">
-            <Image src="/images/logo-pt-white.webp" alt="Dragon Kitchen Portugal" width={1080} height={1080} sizes="192px" />
+            <Image src="/images/Logo.png" alt="Dragon Kitchen Portugal" width={1080} height={1350} sizes="192px" />
           </a>
           <p>{t.footer.location}</p>
         </div>

@@ -4,6 +4,7 @@ import Image, { getImageProps } from "next/image";
 import { motion, useReducedMotion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { RESERVATION_URL } from "@/lib/constants";
+import { EmberField } from "./EmberField";
 import { useLanguage } from "./LanguageProvider";
 
 export function Hero() {
@@ -14,7 +15,7 @@ export function Hero() {
   const imageY = useTransform(scrollYProgress, [0, 1], ["0%", reduceMotion ? "0%" : "9%"]);
   const imageAlt = "Exterior iluminado da Dragon Kitchen Portugal em Parque das Nações";
   const { props: { srcSet: mobileSrcSet } } = getImageProps({
-    src: "/images/hero-mobile.webp",
+    src: "/images/hero-mobile-v2.webp",
     alt: imageAlt,
     fill: true,
     sizes: "100vw",
@@ -37,6 +38,7 @@ export function Hero() {
       </motion.div>
       <div className="hero__shade" />
       <div className="hero__grain" />
+      <EmberField className="ember-field--hero" />
 
       <div className="hero__content shell">
         <motion.div
@@ -64,7 +66,7 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.65 }}
         >
-          <Image src="/images/logo-hero.webp" alt="Dragon Kitchen Portugal" width={1080} height={1080} sizes="(min-width: 768px) 130px, 92px" />
+          <Image src="/images/Logo.png" alt="Dragon Kitchen Portugal" width={1080} height={1350} sizes="(min-width: 768px) 130px, 92px" />
         </motion.div>
       </div>
     </section>
