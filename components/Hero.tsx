@@ -37,6 +37,7 @@ export function Hero() {
         </picture>
       </motion.div>
       <div className="hero__shade" />
+      <div className="hero__title-scrim" aria-hidden="true" />
       <div className="hero__grain" />
       <EmberField className="ember-field--hero" />
 

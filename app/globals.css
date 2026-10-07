@@ -318,6 +318,14 @@ button { font: inherit; }
     linear-gradient(90deg, rgb(2 22 16 / 43%) 0%, rgb(2 22 16 / 8%) 62%);
 }
 
+.hero__title-scrim {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(ellipse 70% 58% at 20% 26%, rgb(0 0 0 / 46%) 0%, rgb(0 0 0 / 30%) 34%, rgb(0 0 0 / 15%) 60%, rgb(0 0 0 / 5%) 80%, transparent 100%);
+}
+
 .hero__grain {
   position: absolute;
   inset: 0;
@@ -1074,6 +1082,7 @@ button { font: inherit; }
   .hero,
   .hero__content { min-height: max(100svh, 39rem); }
   .hero__image img { object-position: center; }
+  .hero__title-scrim { background: radial-gradient(ellipse 95% 42% at 12% 20%, rgb(0 0 0 / 42%) 0%, rgb(0 0 0 / 26%) 38%, rgb(0 0 0 / 11%) 66%, transparent 100%); }
   .hero__identity { top: 5.75rem; }
   .hero__statement { gap: 1rem; margin-bottom: 4.25rem; }
   .hero-cta { min-height: 3.25rem; padding-block: 0.8rem; }
