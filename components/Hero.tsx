@@ -21,7 +21,7 @@ export function Hero() {
     sizes: "100vw",
   });
   const { props: desktopImageProps } = getImageProps({
-    src: "/images/space-1-v2.webp",
+    src: "/images/dragon-kitchen-at-twilight.webp",
     alt: imageAlt,
     fill: true,
     sizes: "100vw",
