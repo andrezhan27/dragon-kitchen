@@ -11,20 +11,19 @@ const EMPTY_LINKS: RestaurantLegalLinks = {
 export async function getRestaurantLegalLinks(): Promise<RestaurantLegalLinks> {
   const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
   const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY;
-  const restaurantSlug = "dragon-kitchen-portugal";
+  const restaurantId = "dragonkitchen";
 
   if (!supabaseUrl || !supabaseKey) return EMPTY_LINKS;
 
   try {
     const query = new URL("/rest/v1/restaurants", supabaseUrl);
     query.searchParams.set("select", "privacy_policy_url,terms_and_conditions_url");
-    query.searchParams.set("slug", `eq.${restaurantSlug}`);
+    query.searchParams.set("id", `eq.${restaurantId}`);
     query.searchParams.set("limit", "1");
 
     const response = await fetch(query, {
       headers: {
         apikey: supabaseKey,
-        Authorization: `Bearer ${supabaseKey}`,
       },
       next: { revalidate: 3600 },
     });
