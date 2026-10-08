@@ -9,9 +9,9 @@ const EMPTY_LINKS: RestaurantLegalLinks = {
 };
 
 export async function getRestaurantLegalLinks(): Promise<RestaurantLegalLinks> {
-  const supabaseUrl = process.env.SUPABASE_URL ?? process.env.NEXT_PUBLIC_SUPABASE_URL;
-  const supabaseKey = process.env.SUPABASE_ANON_KEY ?? process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
-  const restaurantSlug = process.env.SUPABASE_RESTAURANT_SLUG ?? "dragon-kitchen-portugal";
+  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+  const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY;
+  const restaurantSlug = "dragon-kitchen-portugal";
 
   if (!supabaseUrl || !supabaseKey) return EMPTY_LINKS;
 

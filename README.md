@@ -30,6 +30,6 @@ npm run start
 - The future menu PDF should be added as `public/menu.pdf`.
 - Reservation and external service URLs are centralized in `lib/constants.ts`.
 - Portuguese and English copy is centralized in `components/LanguageProvider.tsx`.
-- Privacy policy and terms links are read from the Supabase `restaurants` table. Copy `.env.example` to `.env.local` and provide the project URL, anon key, and restaurant slug.
+- Privacy policy and terms links are read from the `dragon-kitchen-portugal` row in the Supabase `restaurants` table. Copy `.env.example` to `.env.local` and provide the project URL and publishable key.
 
 The project can be deployed directly to Vercel with its default Next.js settings.
