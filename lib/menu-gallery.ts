@@ -142,7 +142,7 @@ export const MENU_GALLERY: MenuGalleryItem[] = [
   { src: newMenuImage("Bolinhas de camarao com molho de salada e mostrada (1).webp"), category: "seafood", pt: "Bolinhas de camarão com molho de salada e mostarda", en: "Prawn balls with salad dressing and mustard" },
   { src: newMenuImage("Camarao agridoce.webp"), category: "seafood", pt: "Camarão agridoce", en: "Sweet and sour prawns" },
   { src: newMenuImage("Cheesecake matcha.webp"), category: "desserts", pt: "Cheesecake de matcha", en: "Matcha cheesecake" },
-  { src: newMenuImage("Golden sopa acido picante com vaca.webp"), category: "soups", pt: "Sopa dourada ácida e picante com vaca", en: "Golden hot and sour beef soup" },
+  { src: newMenuImage("Golden sopa acido picante com vaca.webp"), category: "meat", pt: "Sopa dourada ácida e picante com vaca", en: "Golden hot and sour beef soup" },
   { src: newMenuImage("Inhame salteado.webp"), category: "vegetables", pt: "Inhame salteado", en: "Stir-fried Chinese yam" },
   { src: newMenuImage("Lula salteada com legumes em comserva.webp"), category: "seafood", pt: "Lula salteada com legumes em conserva", en: "Stir-fried squid with preserved vegetables" },
   { src: newMenuImage("Mochi morango.webp"), category: "desserts", pt: "Mochi de morango", en: "Strawberry mochi" },
